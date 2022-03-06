@@ -506,6 +506,7 @@ public class App extends PApplet {
 		fill(255);
 		text(mapTitle, width/2, height-15); // white centered text
 	}
+	
 	/**
 	 * The main method is automatically called when the program runs.
 	 * This method is given to you.
