@@ -28,6 +28,7 @@ public class App extends PApplet {
 	/*                  BEGIN - DON'T MODIFY THIS CODE              */
 	/****************************************************************/
 	UnfoldingMap map; // will be a reference to the actual map
+	String mapTitle; // will hold the title of the map
 	final float SCALE_FACTOR = 0.0002f; // a factor used to scale pedestrian counts to calculate a reasonable radius for a bubble marker on the map
 	final int DEFAULT_ZOOM_LEVEL = 11;
 	final Location DEFAULT_LOCATION = new Location(40.7286683f, -73.997895f); // a hard-coded NYC location to start with
@@ -84,6 +85,7 @@ public class App extends PApplet {
 	 * @param data A two-dimensional String array, containing the data returned by the getDataFromLines method.
 	 */
 	public void showMay2021MorningCounts(String[][] data) {
+		mapTitle = "May 2021 Morning Pedestrian Counts";
 		clearMap(); // clear any markers previously placed on the map
 		// remove the example code below and replace with your own code that solves the problem
 
@@ -126,6 +128,7 @@ public class App extends PApplet {
 	 * @param data A two-dimensional String array, containing the data returned by the getDataFromLines method.
 	 */
 	public void showMay2021EveningCounts(String[][] data) {
+		mapTitle = "May 2021 Evening Pedestrian Counts";
 		clearMap(); // clear any markers previously placed on the map
 		// remove the example code below and replace with your own code that solves the problem
 
@@ -166,6 +169,7 @@ public class App extends PApplet {
 	 * @param data A two-dimensional String array, containing the data returned by the getDataFromLines method.
 	 */
 	public void showMay2021EveningMorningCountsDifference(String[][] data) {
+		mapTitle = "Difference between May 2021 Evening and Morning Pedestrian Counts";
 		clearMap(); // clear any markers previously placed on the map
 		// remove the example code below and replace with your own code that solves the problem
 
@@ -219,6 +223,7 @@ public class App extends PApplet {
 	 * @param data A two-dimensional String array, containing the data returned by the getDataFromLines method.
 	 */
 	public void showMay2021VersusMay2019Counts(String[][] data) {
+		mapTitle = "Difference Between May 2021 and May 2019 Pedestrian Counts";
 		clearMap(); // clear any markers previously placed on the map
 		// remove the example code below and replace with your own code that solves the problem
 
@@ -280,6 +285,7 @@ public class App extends PApplet {
 	 * @param data
 	 */
 	public void customVisualization1(String[][] data) {
+		mapTitle = "Enter Custom Map 1 Title Here";
 		clearMap(); // clear any markers previously placed on the map
 		// remove the example code below and replace with your own code that solves the problem
 
@@ -301,6 +307,7 @@ public class App extends PApplet {
 	 * @param data
 	 */
 	public void customVisualization2(String[][] data) {
+		mapTitle = "Enter Custom Map 2 Title Here";
 		clearMap(); // clear any markers previously placed on the map
 		// remove the example code below and replace with your own code that solves the problem
 
@@ -476,6 +483,7 @@ public class App extends PApplet {
 	public void draw() {
 		background(0);
 		map.draw();
+		drawTitle();
 	}
 
 	/**
@@ -487,6 +495,17 @@ public class App extends PApplet {
 		map.getMarkers().clear();
 	}
 
+	/**
+	 * Draw the title of the map at the bottom of the screen
+	 */
+	public void drawTitle() {
+		fill(0);
+		noStroke();
+		rect(0, height-40, width, height-40); // black rectangle
+		textAlign(CENTER);
+		fill(255);
+		text(mapTitle, width/2, height-15); // white centered text
+	}
 	/**
 	 * The main method is automatically called when the program runs.
 	 * This method is given to you.
