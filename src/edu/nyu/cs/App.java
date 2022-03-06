@@ -85,8 +85,8 @@ public class App extends PApplet {
 	 * @param data A two-dimensional String array, containing the data returned by the getDataFromLines method.
 	 */
 	public void showMay2021MorningCounts(String[][] data) {
-		mapTitle = "May 2021 Morning Pedestrian Counts";
 		clearMap(); // clear any markers previously placed on the map
+		mapTitle = "May 2021 Morning Pedestrian Counts";
 		// remove the example code below and replace with your own code that solves the problem
 
 		// example of how to create a marker at a specific location and place it on the map
@@ -128,8 +128,8 @@ public class App extends PApplet {
 	 * @param data A two-dimensional String array, containing the data returned by the getDataFromLines method.
 	 */
 	public void showMay2021EveningCounts(String[][] data) {
-		mapTitle = "May 2021 Evening Pedestrian Counts";
 		clearMap(); // clear any markers previously placed on the map
+		mapTitle = "May 2021 Evening Pedestrian Counts";
 		// remove the example code below and replace with your own code that solves the problem
 
 		// example of how to create a marker at a specific location and place it on the map
@@ -169,8 +169,8 @@ public class App extends PApplet {
 	 * @param data A two-dimensional String array, containing the data returned by the getDataFromLines method.
 	 */
 	public void showMay2021EveningMorningCountsDifference(String[][] data) {
-		mapTitle = "Difference between May 2021 Evening and Morning Pedestrian Counts";
 		clearMap(); // clear any markers previously placed on the map
+		mapTitle = "Difference between May 2021 Evening and Morning Pedestrian Counts";
 		// remove the example code below and replace with your own code that solves the problem
 
 		// example of how to create a marker at a specific location and place it on the map
@@ -223,8 +223,8 @@ public class App extends PApplet {
 	 * @param data A two-dimensional String array, containing the data returned by the getDataFromLines method.
 	 */
 	public void showMay2021VersusMay2019Counts(String[][] data) {
-		mapTitle = "Difference Between May 2021 and May 2019 Pedestrian Counts";
 		clearMap(); // clear any markers previously placed on the map
+		mapTitle = "Difference Between May 2021 and May 2019 Pedestrian Counts";
 		// remove the example code below and replace with your own code that solves the problem
 
 		// example of how to create a marker at a specific location and place it on the map
@@ -285,8 +285,8 @@ public class App extends PApplet {
 	 * @param data
 	 */
 	public void customVisualization1(String[][] data) {
-		mapTitle = "Enter Custom Map 1 Title Here";
 		clearMap(); // clear any markers previously placed on the map
+		mapTitle = "Enter Custom Map 1 Title Here";
 		// remove the example code below and replace with your own code that solves the problem
 
 		// example of how to create a marker at a specific location and place it on the map
@@ -307,8 +307,8 @@ public class App extends PApplet {
 	 * @param data
 	 */
 	public void customVisualization2(String[][] data) {
-		mapTitle = "Enter Custom Map 2 Title Here";
 		clearMap(); // clear any markers previously placed on the map
+		mapTitle = "Enter Custom Map 2 Title Here";
 		// remove the example code below and replace with your own code that solves the problem
 
 		// example of how to create a marker at a specific location and place it on the map
@@ -399,6 +399,7 @@ public class App extends PApplet {
 		// 	{"-73.92785197149036","40.80034506063933","Harlem River Bridges","113","113","Triborough Bridge (Manhattan span)","midpoint","","N","17","35","34","11","44","24","30","44","16","30","200","23","37","44","23","20","174","66","12","39","55","36","205","64","10","45","11","7","119","39","26","21","49","6","33","15","12","42","16","13","31","40","14","32","10","21","42","20","19","36","14","17","40","28","10","18","8","21","43","21","7","19","5","16","38","24","6","14","4","12","15","6","","","","","","","23","52","6437"},
 		// 	{"-73.93686603590555","40.78611224350854","Harlem River Bridges","114","114","Wards Island Bridge","midpoint","","N","57","207","71","63","186","149","45","203","113","80","190","120","33","213","324","43","151","173","37","169","674","77","205","913","32","66","70","62","189","936","78","249","439","102","460","569","191","455","435","92","514","594","164","527","312","123","458","564","189","539","312","117","424","581","160","484","300","159","490","587","169","493","312","178","519","608","187","543","351","213","490","263","","","","","","","237","405","6353"}
 		// };
+		// return allLines
 
 		return allLines;
 	}
