@@ -113,6 +113,7 @@ public class App extends PApplet {
 
 			// create the marker
 			float[] fillColor = {0, 0, 255, 127}; // a color: red, green, blue, and alpha (transparency), each represented as numbers between 0 and 255
+			// System.out.printf("Placing marker at [%f,%f] radius: %f\n", lat, lng, radius);
 			MarkerBubble marker = new MarkerBubble(this, location, radius, fillColor);
 			// MarkerBubble marker = new MarkerBubble(this, location, radius); // an alternative that uses the default color (red)
 			// MarkerImage marker = new MarkerImage(this, location); // an alternative kind of marker using an image file instead of a circle
