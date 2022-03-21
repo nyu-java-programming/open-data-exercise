@@ -117,7 +117,7 @@ public class App extends PApplet {
 			MarkerBubble marker = new MarkerBubble(this, location, radius, fillColor);
 			// MarkerBubble marker = new MarkerBubble(this, location, radius); // an alternative that uses the default color (red)
 			// MarkerImage marker = new MarkerImage(this, location); // an alternative kind of marker using an image file instead of a circle
-			// MarkerImage marker = new MarkerImage(this, location, "images/marker_blug.png"); // an image marker with a custom image... try your own image files!
+			// MarkerImage marker = new MarkerImage(this, location, "images/marker_blue.png"); // an image marker with a custom image... try your own image files!  Windows users should use "images\\marker_blue.png" instead.
 			map.addMarker(marker); // add marker to the map
 		}
 	}
@@ -421,7 +421,7 @@ public class App extends PApplet {
 		map = getMap(); // create the map and store it in the global-ish map variable
 
 		// load the data from the file... you will have to complete the functions called to make sure this works
-		String[] lines = getLinesFromFile("data/PedCountLocationsMay2015.csv"); // get an array of the lines from the file
+		String[] lines = getLinesFromFile("data/PedCountLocationsMay2015.csv"); // get an array of the lines from the file... windows users should replace with "data\\PedCountLocationsMay2015.csv"
 		data = getDataFromLines(lines); // get a two-dimensional array of the data in these lines; complete the getDataFromLines method so the data from the file is returned appropriately
 		// System.out.println(Arrays.deepToString(data)); // for debugging
 
