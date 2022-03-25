@@ -5,6 +5,9 @@ import java.io.File;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.regex.Pattern;
+
+import org.apache.commons.lang3.SystemUtils;
+
 import java.util.regex.Matcher;
 
 // some imports used by the UnfoldingMap library
@@ -516,6 +519,8 @@ public class App extends PApplet {
 	 * @param args A String array of command-line arguments.
 	 */
 	public static void main(String[] args) {
+		File javaDirectory = SystemUtils.getJavaHome();
+		System.out.printf("\n###  JDK in use ###\n%s\n### ^JDK in use ###\n\n", javaDirectory);
 		PApplet.main("edu.nyu.cs.App"); // do not modify this!
 	}
 
