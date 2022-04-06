@@ -2,6 +2,7 @@ package edu.nyu.cs;
 
 // some basic java imports
 import java.io.File;
+import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.regex.Pattern;
@@ -424,7 +425,9 @@ public class App extends PApplet {
 		map = getMap(); // create the map and store it in the global-ish map variable
 
 		// load the data from the file... you will have to complete the functions called to make sure this works
-		String[] lines = getLinesFromFile("data/PedCountLocationsMay2015.csv"); // get an array of the lines from the file... windows users should replace with "data\\PedCountLocationsMay2015.csv"
+		String cwd = Paths.get("").toAbsolutePath().toString(); // the current working directory as an absolute path
+		String path = Paths.get(cwd, "data", "PedCountLocationsMay2015.csv").toString(); // e.g "data/PedCountLocationsMay2015.csv" on Mac/Unix vs. "data\PedCountLocationsMay2015.csv" on Windows
+		String[] lines = getLinesFromFile(path); // get an array of the lines from the file... windows users should replace with "data\\PedCountLocationsMay2015.csv"
 		data = getDataFromLines(lines); // get a two-dimensional array of the data in these lines; complete the getDataFromLines method so the data from the file is returned appropriately
 		// System.out.println(Arrays.deepToString(data)); // for debugging
 
