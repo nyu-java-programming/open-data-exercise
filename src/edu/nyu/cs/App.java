@@ -427,7 +427,7 @@ public class App extends PApplet {
 		// load the data from the file... you will have to complete the functions called to make sure this works
 		String cwd = Paths.get("").toAbsolutePath().toString(); // the current working directory as an absolute path
 		String path = Paths.get(cwd, "data", "PedCountLocationsMay2015.csv").toString(); // e.g "data/PedCountLocationsMay2015.csv" on Mac/Unix vs. "data\PedCountLocationsMay2015.csv" on Windows
-		String[] lines = getLinesFromFile(path); // get an array of the lines from the file... windows users should replace with "data\\PedCountLocationsMay2015.csv"
+		String[] lines = getLinesFromFile(path); // get an array of the lines from the file... 
 		data = getDataFromLines(lines); // get a two-dimensional array of the data in these lines; complete the getDataFromLines method so the data from the file is returned appropriately
 		// System.out.println(Arrays.deepToString(data)); // for debugging
 
