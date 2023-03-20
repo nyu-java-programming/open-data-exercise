@@ -60,7 +60,7 @@ public class App extends PApplet {
 
 	/**
 	 * Adds markers to the map for the morning pedestrian counts in May 2021.
-	 * These counts are in the second-to-last field in the CSV data file.  So we look at the second-to-last array element in our data array for these values.
+	 * These counts are in the third-to-last field in the CSV data file.  So we look at the third-to-last array element in our data array for these values.
 	 * 
 	 * @param data A two-dimensional String array, containing the data returned by the getDataFromLines method.
 	 */
