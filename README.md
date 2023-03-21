@@ -52,7 +52,7 @@ You will write code to perform `6` different analyses of the data and map the re
 1. the difference between the pedestrian counts in the evening compared to the morning in May 2021. Complete the `showMay2021EveningMorningCountsDifference` method for this.
 1. the difference between the average of the morning/evening pedestrian counts in May 2021 compared to the average of the morning/evening pedestrian counts in May 2019. Complete the `showMay2021VersusMay2019Counts` method for this.
 1. another more analyses of your choosing. Complete the `customVisualization1` method for this.
-1. another more analyses of your choosing. Complete the `customVisualization1` method for this.
+1. another more analyses of your choosing. Complete the `customVisualization2` method for this.
 
 In all cases, if data required by the analysis is missing for any given location in the original data set, a marker should not be placed at that location on the map.
 
